@@ -1,0 +1,61 @@
+
+<div class="columns mt-6 is-centered">
+<div class="column is-one-third">
+
+  <nav class="panel is-primary">
+<div class="panel-heading">
+<div style="display:flex;justify-content:space-between" >
+  Meal type:
+  <%= @entry.meal_type %>
+ <div >
+  
+  <%= link_to 'Edit', edit_entry_path(@entry), class:"has-text-white-bis mr-2 has-text-weight-medium" %>
+  
+   <%= link_to 'Delete', entry_path, method: :delete, data:{confirm:"Are you sure you want to delete ?"},  class:"has-text-white-bis has-text-weight-medium" %></span>
+ </div>
+ 
+</div>  
+
+</div>
+
+<div class="panel-block">
+Calories:
+<span class="has-text-weight-bold">&nbsp;<%= @entry.calories %></span>
+
+</div>
+  
+<div class="panel-block">
+Proteins:
+<span class="has-text-weight-bold">&nbsp;<%= @entry.proteins %>g</span>
+</div>
+ 
+
+  <div class="panel-block">
+  Carbohydrates:
+  <span class="has-text-weight-bold">&nbsp;<%= @entry.carbohydrates %>g</span>
+
+  </div>
+
+
+  <div class="panel-block">
+   Fats:
+   <span class="has-text-weight-bold">&nbsp;<%= @entry.fats %>g</span>
+
+  </div>
+  </nav>
+
+  
+  <div class = "column is-mobile">
+  <div class="column">
+  
+  </div>
+
+  <div class="column">
+  
+  </div>
+  </div>
+  
+
+</div>  
+
+</div>
